@@ -1,6 +1,6 @@
 export const environment = {
-  version: "",
+  version: '',
   production: true,
-  BASE_URL: "",
-  ENV_NAME: "prod"
+  BASE_URL: '',
+  ENV_NAME: 'prod'
 };

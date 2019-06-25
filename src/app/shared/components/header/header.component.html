@@ -1,1 +1,16 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>{{appName}}</span>
+
+    <div class="app-width-100" fxLayout="row"
+         fxLayout.xs="column"
+         fxLayoutGap="10px"
+         fxLayoutAlign="end center">
+
+      <a [routerLink]="['/content']" mat-button routerLinkActive="mat-accent">Content</a>
+      <a [routerLink]="['/about']" mat-button routerLinkActive="mat-accent">About</a>
+
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>

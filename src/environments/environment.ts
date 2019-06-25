@@ -3,10 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  version: "",
+  version: '',
   production: false,
-  BASE_URL: "",
-  ENV_NAME: "dev"
+  BASE_URL: '',
+  ENV_NAME: 'dev'
 };
 
 /*

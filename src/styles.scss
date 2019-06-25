@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Resetting Default Styles */
+body {
+  padding: unset !important;
+  margin: unset !important;
+}
+
+/* Resetting Default Styles */
+
+/* Basic Styles */
+.app-width-100 {
+  width: 100%;
+}
+
+.app-stick-bottom {
+  position:absolute;
+  bottom:0;
+}
+
+/* End Basic Styles */
