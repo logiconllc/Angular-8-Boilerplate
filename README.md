@@ -1,6 +1,6 @@
 # Angular 8 Boilerplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.
 
 ## Get started
 
@@ -55,7 +55,9 @@ This is the new standard for developing Angular apps and a great way to ensure m
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run  `ng serve --open`  for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+`--open` flag will automatically redirect to specified port in browser.
 
 ## Code scaffolding
 
