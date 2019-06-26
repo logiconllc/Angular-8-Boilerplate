@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {APP_VERSION} from '@shared/Helper/strings';
+import {APP_VERSION} from '../../../shared/helper/common';
 
 @Component({
   selector: 'app-footer',
