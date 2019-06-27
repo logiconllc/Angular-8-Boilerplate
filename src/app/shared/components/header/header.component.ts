@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {APP_NAME} from '@shared/Helper/strings';
+import {APP_NAME} from '../../../shared/helper/common';
 
 @Component({
   selector: 'app-header',

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SampleService} from '@core/services/sample.service';
+import {SampleModel} from '@shared/models/sample.model';
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  public sampleModel: SampleModel;
+
+  constructor(private sampleService: SampleService) { }
 
   ngOnInit() {
+    this.sampleService.getSampleData().subscribe(data => {
+      this.sampleModel = data;
+    });
   }
 
 }

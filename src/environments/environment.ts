@@ -5,7 +5,7 @@
 export const environment = {
   version: '',
   production: false,
-  BASE_URL: '',
+  BASE_URL: 'http://5d1360f176f3f5001415f022.mockapi.io',
   ENV_NAME: 'dev'
 };
 
