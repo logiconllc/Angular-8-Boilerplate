@@ -1,5 +1,5 @@
 export interface SampleModel {
-  id: number;
+  id: string;
   name: string;
   description: string;
 }

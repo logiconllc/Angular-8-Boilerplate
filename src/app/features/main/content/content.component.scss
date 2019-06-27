@@ -1,0 +1,19 @@
+.main-div {
+  display: flex;
+  justify-content: center;
+  .example-card {
+    margin-top: 10px;
+    top: 30%;
+    width: 35%;
+    height: 16%;
+    max-height: fit-content;
+    position: fixed;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  .font-align {
+    text-align: right;
+  }
+}
+
