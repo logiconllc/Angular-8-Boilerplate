@@ -14,11 +14,10 @@ export class SampleService {
 
   getSampleData(): Observable<SampleModel> {
     let url: string = '/mock';
-    // let params = new HttpParams();
-    return this.http.get<any>(url, {})
+    return this.http.get<any>(url)
       .pipe(
-        map(data => {
-          return data;
+        map((res: SampleModel) => {
+          return res;
         })
       );
   }

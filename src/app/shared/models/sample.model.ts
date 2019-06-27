@@ -1,10 +1,6 @@
-export class SampleModel {
+export interface SampleModel {
+  id: number;
   name: string;
   description: string;
-
-  constructor(params: any = {}) {
-    this.name = params.Id || '';
-    this.description = params.description || '';
-  }
 }
 
