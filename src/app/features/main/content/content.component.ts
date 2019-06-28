@@ -10,7 +10,6 @@ import {SampleModel} from '@shared/models/sample.model';
 export class ContentComponent implements OnInit {
 
   public sampleModel: SampleModel;
-  t = [1,2,3]
 
   constructor(private sampleService: SampleService) { }
 
