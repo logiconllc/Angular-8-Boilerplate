@@ -53,6 +53,30 @@ This is the new standard for developing Angular apps and a great way to ensure m
 
 ```
 
+##Recommended Practices
+* All the application wide styles must go into `src/styles.scss` and must start with a prefix `app-`
+```scss
+.app-width-100 {
+  width: 100%;
+}
+
+.app-stick-bottom {
+  position:absolute;
+  bottom:0;
+}
+```
+* Use Resolvers when navigating to a new route if that route requires an HTTP request to fetch data.
+* Use Error-Handler Interceptor for handling HTTP errors. You can use any logic to show errors, for example, Toasters etc.
+* Use Lazy loaded Modules.
+* All Shared components must go into `src/shared`.
+* All Services, Pipes, Directives must go into `src/core`.
+* All application features must go into `src/features`.
+
+##External Packages
+* [tslint-microsoft-contrib](https://github.com/microsoft/tslint-microsoft-contrib) (You can remove this, if you want to, from `src/tslint.json` by removing `"tslint-microsoft-contrib/recommended"` from `extends` array).
+* [Angular Material](https://material.angular.io/)
+* [Angular Flex-Layout](https://github.com/angular/flex-layout)
+
 ## Development server
 
 Run  `ng serve --open`  for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
