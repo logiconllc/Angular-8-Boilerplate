@@ -1,11 +1,14 @@
-<div class="main-div">
-  <mat-card class="example-card">
-    <mat-card-title>
-      Here is today's motivation for you!
-    </mat-card-title>
-    <mat-card-content *ngFor="let arr of sampleModel">
-      {{arr.description}}
-      <mat-card-subtitle class="font-align"> {{arr.name}}</mat-card-subtitle>
-    </mat-card-content>
-  </mat-card>
-</div>
+  <div class="main-div"
+       fxLayout
+       fxLayoutAlign="center center">
+    <mat-card>
+      <mat-card-title>
+        Here is today's motivation for you!
+      </mat-card-title>
+      <mat-card-content *ngFor="let arr of sampleModel">
+        {{arr.description}}
+        <mat-card-subtitle  fxLayout
+                            fxLayoutAlign="end"> {{arr.name}}</mat-card-subtitle>
+      </mat-card-content>
+    </mat-card>
+  </div>

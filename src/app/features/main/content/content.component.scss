@@ -1,19 +1,13 @@
 .main-div {
-  display: flex;
-  justify-content: center;
-  .example-card {
-    margin-top: 10px;
-    top: 30%;
-    width: 35%;
-    height: 16%;
-    max-height: fit-content;
-    position: fixed;
-    line-height: 30px;
-    font-weight: bold;
-    font-family: cursive;
-  }
-  .font-align {
-    text-align: right;
+  height: 35rem !important;
+  padding: 20px;
+
+  mat-card {
+    width: 35rem;
+
+    mat-card-subtitle {
+      margin-top: 10px;
+    }
   }
 }
 
