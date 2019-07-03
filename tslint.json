@@ -1,5 +1,6 @@
 {
-  "extends": "tslint:recommended",
+  "extends": ["tslint:recommended",
+              "tslint-microsoft-contrib/recommended"],
   "rulesDirectory": [
     "codelyzer"
   ],

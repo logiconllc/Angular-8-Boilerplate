@@ -7,6 +7,8 @@ import {ApiInterceptor} from '@core/services/interceptors/api.interceptor';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {CoreModule} from '@core/core.module';
 import {ErrorHandler} from '@core/services/interceptors/error-handler/error-handler';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {ErrorHandler} from '@core/services/interceptors/error-handler/error-hand
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     {
